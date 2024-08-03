@@ -7,12 +7,11 @@ app.use(cors());
 const PORT = 8000;
 
 app.post('/auth', (req, res)=> {    
+  const streamkey = req.body.key;
+  if (streamkey === "supersecret") {
     return res.status(200).send();
-    const streamkey = req.body.key;
-    if (streamkey === "supersecret") {
-      return;
-    }
-    res.status(400).send();
+  }
+  return res.status(400).send();
   
 });
 
