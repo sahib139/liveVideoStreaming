@@ -12,4 +12,4 @@
 - Open a browser and go to `http://localhost:8080/index.html?name={YourName}` to view your live stream!
 
 ## Demo Video
-[Watch the demo video](/home/xolo/LIveVIdeoStreamingDemo.mp4)
+[Watch the demo video](https://drive.google.com/file/d/1DEZUJuIlmY44V_3aqrWSudzR9JHHJrxR/view)
