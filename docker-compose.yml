@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  rtmp:
+    build: ./rtmp-server
+    ports:
+      - "1935:1935"
+      - "8080:8080"
+    container_name: rtmp_server
+    volumes:
+      - ./data:/tmp/hls
+  auth:
+    build: ./auth-server
+    ports:
+      - "8000:8000"
+    container_name: auth_server
